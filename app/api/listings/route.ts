@@ -23,7 +23,7 @@ export async function POST(
     guestCount,
     location,
     price,
-    
+    siperfaqe
     
    } = body;
 
@@ -45,7 +45,7 @@ export async function POST(
       locationValue: location.value,
       price: parseInt(price, 10),
       userId: currentUser.id,
-      
+      siperfaqe,
       
       
     }

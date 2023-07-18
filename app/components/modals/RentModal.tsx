@@ -58,7 +58,7 @@ const RentModal = () => {
       price: 1,
       title: '',
       description: '',
-      
+      siperfaqe: 1,
     }
   });
 
@@ -68,7 +68,7 @@ const RentModal = () => {
   const roomCount = watch('roomCount');
   const bathroomCount = watch('bathroomCount');
   const imageSrc = watch('imageSrc');
- 
+  const siperfaqe = watch('siperfaqe')
 
 
   const Map = useMemo(() => dynamic(() => import('../Map'), { 
@@ -185,7 +185,15 @@ const RentModal = () => {
           title="Plotesoni te dhenat"
           subtitle=""
         />
-        
+        <Input
+                   id="siperfaqe"
+                   label="Siperfaqja ne m2"
+                   type="int"
+                   disabled={isLoading}
+                   register={register}
+                   errors={errors}
+                   required
+                />
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
           value={guestCount}

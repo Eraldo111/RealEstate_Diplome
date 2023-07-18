@@ -113,7 +113,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           {data.title}
         </div>
         <div className="font-light text-neutral-500">
-          {data.guestCount}+1   ,   m2
+          {data.guestCount}+1   ,  {data.siperfaqe} m2
         </div>
         <div className="font-light text-neutral-500">
            {data.category}
