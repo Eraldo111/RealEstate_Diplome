@@ -58,7 +58,7 @@ const RentModal = () => {
       price: 1,
       title: '',
       description: '',
-      siperfaqe: 1,
+      
     }
   });
 

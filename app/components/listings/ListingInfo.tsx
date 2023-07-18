@@ -19,7 +19,7 @@ interface ListingInfoProps {
   guestCount: number;
   roomCount: number;
   bathroomCount: number;
-  Siperfaqe: number;
+  
   category: {
     icon: IconType,
     label: string;
@@ -36,7 +36,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
   bathroomCount,
   category,
   locationValue,
-  Siperfaqe
+
 }) => {
   const { getByValue } = useCountries();
 
@@ -89,7 +89,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
         gap-2
       "
         >
-          Siperfaqja: {Siperfaqe} m2
+          
         </div>
       </hr>
       <hr />
